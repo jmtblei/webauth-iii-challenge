@@ -3,7 +3,8 @@ const userdb = require('./users-model');
 const restricted = require('../auth/restricted-mw');
 
 router.get('/', restricted, checkDepartment('department'), (req, res) => {
-    userdb.find()
+    let { department } = req.body;
+    userdb.find({ department })
       .then(users => {
         res.json(users);
       })
