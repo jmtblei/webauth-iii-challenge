@@ -6,11 +6,9 @@
     "server": "nodemon",
     "start": "node index.js"
   },
-  
   "repository": "https://github.com/jmtblei/webauth-iii-challenge.git",
   "author": "jmtblei <47536941+jmtblei@users.noreply.github.com>",
   "license": "MIT",
-
   "devDependencies": {
     "nodemon": "^1.19.0"
   },
